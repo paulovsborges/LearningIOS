@@ -12,17 +12,25 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+    @State private var playerScore = 0
     
     @State private var alertTittle = ""
     @State private var alertMessage = ""
     @State private var isShowingAlert = false
     
+    
     var body: some View {
         NavigationStack{
             List{
-                Section{
-                    TextField("Enter a new word", text: $newWord)
-                        .textInputAutocapitalization(.never)
+                HStack {
+                    Section{
+                            TextField("Enter a new word", text: $newWord)
+                                .textInputAutocapitalization(.never)
+                            
+                    }
+                    Section{
+                        Text("Your score \(playerScore)")
+                    }
                 }
                 
                 Section{
@@ -70,6 +78,8 @@ struct ContentView: View {
             showError(title: "Word too short", message: "You can do better than this")
             return
         }
+        
+        playerScore += 1
         
         withAnimation{
             usedWords.insert(answer, at: 0)
@@ -133,6 +143,7 @@ struct ContentView: View {
     private func restartGame(){
         usedWords.removeAll()
         newWord = ""
+        playerScore = 0
         startGame()
     }
     
