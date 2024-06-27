@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var currentPlayerScore = 0
     @State private var currentAnswer = ""
     
-    @State private var isBottomSHeetShowing = false
+    @State private var isBottomSheetShowing = false
     
     var body: some View {
         VStack {
@@ -70,7 +70,7 @@ struct ContentView: View {
             currentPlayerScore += 1
         }else{
             currentPlayerScore = 0
-            isBottomSHeetShowing = true
+            isBottomSheetShowing = true
         }
         
         currentQuestion = nil
