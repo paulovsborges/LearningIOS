@@ -24,28 +24,46 @@ struct MissionDetailsView: View {
                         width * 0.6
                     }
                 
+                Divider()
+                
                 VStack(alignment: .leading, content: {
+                    
+                    HStack{
+                        Spacer()
+                    }
+                    
                     Text("Mission highligths")
                         .font(.title.bold())
                         .padding(.bottom, 5)
                     
+                    VStack{
+                        
+                        Text("Launched at ")
+                        + Text(mission.formattedDate)
+                            .bold()
+                    }.padding(.bottom)
+                    
                     Text(mission.description)
-                }).padding(.horizontal)
+                })
+                .padding(.horizontal)
                 
-                ScrollView(.horizontal){
+                Divider()
+                
+                HStack{
+                    
+                    Text("Mission crew")
+                        .font(.headline)
+                        .padding([.top, .leading])
+                    
+                    Spacer()
+                }
+                
+                ScrollView(.horizontal, showsIndicators: false){
                     HStack{
                         ForEach(astronauts){ astronaut in
-                            VStack{
-                                Image(astronaut.id)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 200, height: 200)
-                                    .onTapGesture {
-                                        self.currentAstronautDetails = astronaut
-                                    }
-                                
-                                Text(astronaut.name)
-                            }
+                            AstronautItemView(image: astronaut.id, name: astronaut.name, onTap: {
+                                currentAstronautDetails = astronaut
+                            })
                         }
                     }
                 }
