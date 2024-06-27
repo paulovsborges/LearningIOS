@@ -10,22 +10,42 @@ struct ContentView: View {
         GridItem(.adaptive(minimum: 150))
     ]
     
+    @State private var isGridLayout = true
+    
     var body: some View {
         NavigationStack{
             ScrollView{
-                LazyVGrid(columns: columns, content: {
-                    ForEach(missions){mission in
-                        MissionItemView(
-                            mission: mission,
-                            astronauts: getMissionAstronauts(mission: mission)
-                        )
+                
+                let content = ForEach(missions){mission in
+                    MissionItemView(
+                        mission: mission,
+                        astronauts: getMissionAstronauts(mission: mission)
+                    )
+                }
+                
+                if isGridLayout {
+                    LazyVGrid(columns: columns, content: {
+                        content
+                    })
+                
+                    .padding([.horizontal, .bottom])
+                } else {
+                    LazyVStack{
+                        content
                     }
-                })
-                .padding([.horizontal, .bottom])
+                    .padding([.horizontal, .bottom])
+                }
+                
             }
             .navigationTitle("Moonshot")
             .background(.darkBackgroundColor)
             .preferredColorScheme(.dark)
+            .toolbar{
+                Image(systemName: isGridLayout ? "grid" : "table")
+                    .onTapGesture {
+                    isGridLayout.toggle()
+                }
+            }
         }
     }
     
