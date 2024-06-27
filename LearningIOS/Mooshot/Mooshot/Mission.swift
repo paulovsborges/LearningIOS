@@ -12,11 +12,11 @@ struct Mission : Codable, Identifiable{
     
     struct CrewRole: Codable{
         let name: String
-        let hole: String
+        let role: String
     }
     
     let id: Int
-    let launchDate: String?
+    let launchDate: Date?
     let crew: [CrewRole]
     let description: String
     
@@ -26,6 +26,10 @@ struct Mission : Codable, Identifiable{
     
     var image : String{
         "apollo\(id)"
+    }
+    
+    var formattedDate : String {
+         launchDate?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
     }
     
 }
