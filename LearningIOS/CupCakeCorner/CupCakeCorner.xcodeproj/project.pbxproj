@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E36F88322C2ECF90003C7512 /* NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36F88312C2ECF90003C7512 /* NavigationApp.swift */; };
-		E36F88342C2ECF90003C7512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36F88332C2ECF90003C7512 /* ContentView.swift */; };
-		E36F88362C2ECF91003C7512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36F88352C2ECF91003C7512 /* Assets.xcassets */; };
-		E36F88392C2ECF91003C7512 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36F88382C2ECF91003C7512 /* Preview Assets.xcassets */; };
+		E36F884C2C2F16F8003C7512 /* CupCakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36F884B2C2F16F8003C7512 /* CupCakeCornerApp.swift */; };
+		E36F884E2C2F16F8003C7512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36F884D2C2F16F8003C7512 /* ContentView.swift */; };
+		E36F88502C2F16FA003C7512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36F884F2C2F16FA003C7512 /* Assets.xcassets */; };
+		E36F88532C2F16FA003C7512 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36F88522C2F16FA003C7512 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E36F882E2C2ECF90003C7512 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E36F88312C2ECF90003C7512 /* NavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationApp.swift; sourceTree = "<group>"; };
-		E36F88332C2ECF90003C7512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E36F88352C2ECF91003C7512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E36F88382C2ECF91003C7512 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E36F88482C2F16F8003C7512 /* CupCakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupCakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E36F884B2C2F16F8003C7512 /* CupCakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupCakeCornerApp.swift; sourceTree = "<group>"; };
+		E36F884D2C2F16F8003C7512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E36F884F2C2F16FA003C7512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E36F88522C2F16FA003C7512 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E36F882B2C2ECF90003C7512 /* Frameworks */ = {
+		E36F88452C2F16F8003C7512 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E36F88252C2ECF90003C7512 = {
+		E36F883F2C2F16F8003C7512 = {
 			isa = PBXGroup;
 			children = (
-				E36F88302C2ECF90003C7512 /* Navigation */,
-				E36F882F2C2ECF90003C7512 /* Products */,
+				E36F884A2C2F16F8003C7512 /* CupCakeCorner */,
+				E36F88492C2F16F8003C7512 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E36F882F2C2ECF90003C7512 /* Products */ = {
+		E36F88492C2F16F8003C7512 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E36F882E2C2ECF90003C7512 /* Navigation.app */,
+				E36F88482C2F16F8003C7512 /* CupCakeCorner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E36F88302C2ECF90003C7512 /* Navigation */ = {
+		E36F884A2C2F16F8003C7512 /* CupCakeCorner */ = {
 			isa = PBXGroup;
 			children = (
-				E36F88312C2ECF90003C7512 /* NavigationApp.swift */,
-				E36F88332C2ECF90003C7512 /* ContentView.swift */,
-				E36F88352C2ECF91003C7512 /* Assets.xcassets */,
-				E36F88372C2ECF91003C7512 /* Preview Content */,
+				E36F884B2C2F16F8003C7512 /* CupCakeCornerApp.swift */,
+				E36F884D2C2F16F8003C7512 /* ContentView.swift */,
+				E36F884F2C2F16FA003C7512 /* Assets.xcassets */,
+				E36F88512C2F16FA003C7512 /* Preview Content */,
 			);
-			path = Navigation;
+			path = CupCakeCorner;
 			sourceTree = "<group>";
 		};
-		E36F88372C2ECF91003C7512 /* Preview Content */ = {
+		E36F88512C2F16FA003C7512 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E36F88382C2ECF91003C7512 /* Preview Assets.xcassets */,
+				E36F88522C2F16FA003C7512 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E36F882D2C2ECF90003C7512 /* Navigation */ = {
+		E36F88472C2F16F8003C7512 /* CupCakeCorner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E36F883C2C2ECF91003C7512 /* Build configuration list for PBXNativeTarget "Navigation" */;
+			buildConfigurationList = E36F88562C2F16FA003C7512 /* Build configuration list for PBXNativeTarget "CupCakeCorner" */;
 			buildPhases = (
-				E36F882A2C2ECF90003C7512 /* Sources */,
-				E36F882B2C2ECF90003C7512 /* Frameworks */,
-				E36F882C2C2ECF90003C7512 /* Resources */,
+				E36F88442C2F16F8003C7512 /* Sources */,
+				E36F88452C2F16F8003C7512 /* Frameworks */,
+				E36F88462C2F16F8003C7512 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Navigation;
-			productName = Navigation;
-			productReference = E36F882E2C2ECF90003C7512 /* Navigation.app */;
+			name = CupCakeCorner;
+			productName = CupCakeCorner;
+			productReference = E36F88482C2F16F8003C7512 /* CupCakeCorner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E36F88262C2ECF90003C7512 /* Project object */ = {
+		E36F88402C2F16F8003C7512 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					E36F882D2C2ECF90003C7512 = {
+					E36F88472C2F16F8003C7512 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = E36F88292C2ECF90003C7512 /* Build configuration list for PBXProject "Navigation" */;
+			buildConfigurationList = E36F88432C2F16F8003C7512 /* Build configuration list for PBXProject "CupCakeCorner" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = E36F88252C2ECF90003C7512;
-			productRefGroup = E36F882F2C2ECF90003C7512 /* Products */;
+			mainGroup = E36F883F2C2F16F8003C7512;
+			productRefGroup = E36F88492C2F16F8003C7512 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E36F882D2C2ECF90003C7512 /* Navigation */,
+				E36F88472C2F16F8003C7512 /* CupCakeCorner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E36F882C2C2ECF90003C7512 /* Resources */ = {
+		E36F88462C2F16F8003C7512 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E36F88392C2ECF91003C7512 /* Preview Assets.xcassets in Resources */,
-				E36F88362C2ECF91003C7512 /* Assets.xcassets in Resources */,
+				E36F88532C2F16FA003C7512 /* Preview Assets.xcassets in Resources */,
+				E36F88502C2F16FA003C7512 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E36F882A2C2ECF90003C7512 /* Sources */ = {
+		E36F88442C2F16F8003C7512 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E36F88342C2ECF90003C7512 /* ContentView.swift in Sources */,
-				E36F88322C2ECF90003C7512 /* NavigationApp.swift in Sources */,
+				E36F884E2C2F16F8003C7512 /* ContentView.swift in Sources */,
+				E36F884C2C2F16F8003C7512 /* CupCakeCornerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E36F883A2C2ECF91003C7512 /* Debug */ = {
+		E36F88542C2F16FA003C7512 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		E36F883B2C2ECF91003C7512 /* Release */ = {
+		E36F88552C2F16FA003C7512 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,14 +264,14 @@
 			};
 			name = Release;
 		};
-		E36F883D2C2ECF91003C7512 /* Debug */ = {
+		E36F88572C2F16FA003C7512 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Navigation/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CupCakeCorner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -284,7 +284,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pvsb.Navigation;
+				PRODUCT_BUNDLE_IDENTIFIER = pvsb.CupCakeCorner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -292,14 +292,14 @@
 			};
 			name = Debug;
 		};
-		E36F883E2C2ECF91003C7512 /* Release */ = {
+		E36F88582C2F16FA003C7512 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Navigation/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CupCakeCorner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -312,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pvsb.Navigation;
+				PRODUCT_BUNDLE_IDENTIFIER = pvsb.CupCakeCorner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E36F88292C2ECF90003C7512 /* Build configuration list for PBXProject "Navigation" */ = {
+		E36F88432C2F16F8003C7512 /* Build configuration list for PBXProject "CupCakeCorner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E36F883A2C2ECF91003C7512 /* Debug */,
-				E36F883B2C2ECF91003C7512 /* Release */,
+				E36F88542C2F16FA003C7512 /* Debug */,
+				E36F88552C2F16FA003C7512 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E36F883C2C2ECF91003C7512 /* Build configuration list for PBXNativeTarget "Navigation" */ = {
+		E36F88562C2F16FA003C7512 /* Build configuration list for PBXNativeTarget "CupCakeCorner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E36F883D2C2ECF91003C7512 /* Debug */,
-				E36F883E2C2ECF91003C7512 /* Release */,
+				E36F88572C2F16FA003C7512 /* Debug */,
+				E36F88582C2F16FA003C7512 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E36F88262C2ECF90003C7512 /* Project object */;
+	rootObject = E36F88402C2F16F8003C7512 /* Project object */;
 }
