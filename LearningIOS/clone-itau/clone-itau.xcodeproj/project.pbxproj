@@ -195,6 +195,9 @@
 			);
 			mainGroup = E3EAF09A2CC4581A0075926F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E36BE06D2CC8051900D35687 /* XCRemoteSwiftPackageReference "SVGKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E3EAF0A42CC4581A0075926F /* Products */;
 			projectDirPath = "";
@@ -552,6 +555,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E36BE06D2CC8051900D35687 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = E3EAF09B2CC4581A0075926F /* Project object */;
 }

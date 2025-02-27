@@ -10,6 +10,7 @@ import SwiftUI
 struct AccessButton: View {
     
     let action: String
+    let assetIcon: String
     
     var body: some View {
         ZStack {
@@ -19,6 +20,19 @@ struct AccessButton: View {
                 
                 Spacer().frame(width: 20)
                 VStack(alignment: .leading, content: {
+                    
+                    Image("lock_icon")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(.green)
+                        .padding(EdgeInsets.init(
+                            top: 10,
+                            leading: 0,
+                            bottom: 10,
+                            trailing: 10
+                        ))
+                    
+                    SVGKImage(named: "lock_icon")
                     
                     Spacer()
                     Text("\(action)").font(.headline)
@@ -32,7 +46,7 @@ struct AccessButton: View {
 #Preview {
     VStack{
         Spacer()
-        AccessButton(action: "Access").frame(height: 200)
+        AccessButton(action: "Access", assetIcon: "Lock").frame(height: 200)
         Spacer()
     }.background(Color.black)
 }
