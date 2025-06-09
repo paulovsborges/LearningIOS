@@ -34,32 +34,5 @@ class HTTPClient{
                 }
             }.resume()
         }
-        
-        //        guard let request = try? HTTPRequestBuilder(endpoint: "/posts/1", method: .GET).build() else { return }
-        
-        //        let session = URLSession(configuration: .ephemeral)
-        //
-        //        let task = session.dataTask(with: request) { data, response, error in
-        //
-        //            guard let data else {
-        //                return
-        //            }
-        //
-        //            do {
-        //                let result = try JSONDecoder().decode(Post.self, from: data)
-        //
-        ////                DispatchQueue.main.async {
-        ////                    textFromPost = result.title
-        ////                    buttonState = .idle
-        ////                }
-        //            } catch let errorCatch{
-        ////                DispatchQueue.main.async {
-        ////                    self.textFromPost = "\(error?.localizedDescription ?? errorCatch.localizedDescription)"
-        ////                    self.buttonState = .idle
-        ////                }
-        //            }
-        //        }
-        //
-        //        task.resume()
     }
 }

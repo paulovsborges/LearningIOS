@@ -10,9 +10,9 @@ import Foundation
 class HTTPRequestBuilder{
     
     private let endpoint: String
-    private let method: HTTPMethod
+    private let method: HTTPMethodEnum
     
-    public init(endpoint: String, method: HTTPMethod) {
+    public init(endpoint: String, method: HTTPMethodEnum) {
         self.endpoint = endpoint
         self.method = method
     }
