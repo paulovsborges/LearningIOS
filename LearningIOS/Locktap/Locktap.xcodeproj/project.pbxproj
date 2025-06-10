@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,6 @@
 		E3D637702C29D56B0093A6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D6376F2C29D56B0093A6CA /* Assets.xcassets */; };
 		E3D637732C29D56B0093A6CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D637722C29D56B0093A6CA /* Preview Assets.xcassets */; };
 		E3D6377A2C29DB200093A6CA /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D637792C29DB200093A6CA /* MyColors.swift */; };
-		E3D6377F2C29DDD20093A6CA /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6377E2C29DDD20093A6CA /* SplashScreen.swift */; };
-		E3D637832C29E15B0093A6CA /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D637822C29E15B0093A6CA /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +21,11 @@
 		E3D6376F2C29D56B0093A6CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3D637722C29D56B0093A6CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E3D637792C29DB200093A6CA /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
-		E3D6377E2C29DDD20093A6CA /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
-		E3D637822C29E15B0093A6CA /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E33648842DF8613900DC6111 /* screens */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = screens; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E3D637652C29D56A0093A6CA /* Frameworks */ = {
@@ -57,8 +57,7 @@
 		E3D6376A2C29D56A0093A6CA /* Locktap */ = {
 			isa = PBXGroup;
 			children = (
-				E3D637812C29E14F0093A6CA /* home */,
-				E3D637802C29DE240093A6CA /* splash */,
+				E33648842DF8613900DC6111 /* screens */,
 				E3D6376B2C29D56A0093A6CA /* LocktapApp.swift */,
 				E3D6376D2C29D56A0093A6CA /* ContentView.swift */,
 				E3D6376F2C29D56B0093A6CA /* Assets.xcassets */,
@@ -76,22 +75,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E3D637802C29DE240093A6CA /* splash */ = {
-			isa = PBXGroup;
-			children = (
-				E3D6377E2C29DDD20093A6CA /* SplashScreen.swift */,
-			);
-			path = splash;
-			sourceTree = "<group>";
-		};
-		E3D637812C29E14F0093A6CA /* home */ = {
-			isa = PBXGroup;
-			children = (
-				E3D637822C29E15B0093A6CA /* HomeScreen.swift */,
-			);
-			path = home;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +89,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E33648842DF8613900DC6111 /* screens */,
 			);
 			name = Locktap;
 			productName = Locktap;
@@ -162,8 +148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D6377F2C29DDD20093A6CA /* SplashScreen.swift in Sources */,
-				E3D637832C29E15B0093A6CA /* HomeScreen.swift in Sources */,
 				E3D6376E2C29D56A0093A6CA /* ContentView.swift in Sources */,
 				E3D6377A2C29DB200093A6CA /* MyColors.swift in Sources */,
 				E3D6376C2C29D56A0093A6CA /* LocktapApp.swift in Sources */,

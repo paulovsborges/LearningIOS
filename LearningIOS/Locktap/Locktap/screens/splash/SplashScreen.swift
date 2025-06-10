@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SplashScreen: View {
     
-    @State private var shouldNavigateToHome = false
+//    @State private var shouldNavigateToHome = false
     
     var body: some View {
         VStack{
@@ -24,16 +24,16 @@ struct SplashScreen: View {
             
             Image("locktap_splash_logo")
             
-            navigationDestination(isPresented: $shouldNavigateToHome, destination: {
-                HomeScreen()
-            })
+//            navigationDestination(isPresented: $shouldNavigateToHome, destination: {
+//                HomeScreen()
+//            })
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(MyColors.blue101727)
         .onAppear{
             DispatchQueue.main.asyncAfter(deadline: .now() + 3){
-                shouldNavigateToHome = true
+//                shouldNavigateToHome = true
             }
         }
     }
