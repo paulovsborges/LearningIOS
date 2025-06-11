@@ -4,7 +4,7 @@ class SplashViewController : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = MyColors.blue101727
+        view.backgroundColor = LocktapStyle.Colors.blue101727
         
         setupAppLogo()
         
@@ -21,7 +21,9 @@ class SplashViewController : UIViewController{
         let createPinViewController = CreatePinViewController()
         navigationController?.setViewControllers([createPinViewController], animated: false)
     }
-    
+}
+
+extension SplashViewController{
     private func setupAppLogo(){
         
         let imageView = UIImageView(image: UIImage(named: "locktap_splash_logo"))
@@ -35,4 +37,3 @@ class SplashViewController : UIViewController{
         ])
     }
 }
-
